@@ -1,3 +1,236 @@
 body {
-  /* rules go here */
+  margin: 0;
 }
+nav {
+  float: right;
+  padding-top: 15px;
+  margin-right: 30px;
+}
+header {
+  height: 60px;
+}
+header a {
+  color: #404040;
+  text-decoration: none;
+  font: 13px/27px Arial,sans-serif;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header button {
+  color: #fff;
+  border: 1px solid #4285f4;
+  outline: none;
+  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+  padding: 0 12px;
+  cursor: default;
+  font: 13px/27px Arial,sans-serif;
+  border-radius: 0.2em;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+header button:hover {
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.squares {
+   padding: 7.5px 15px;
+   background: url(http://ssl.gstatic.com/gb/images/i2_9ef0f6fa.png);
+   background-size: 356px 144px;
+   background-position: -99px 375px;
+   opacity: 0.55;
+   cursor: default;
+   margin-right: 12px;
+}
+.squares:hover {
+  opacity: 0.9;
+}
+.links {
+  margin-left: 11px;
+}
+.links:nth-of-type(3) {
+  margin-right: 14px;
+}
+figure img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 450px;
+  padding-bottom: 15px;
+}
+.search {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+  -webkit-appearance: textfield;
+  width: 100%;
+  outline: none;
+  border: 1px solid #rgba(0,0,0,0.5);
+}
+input[type=search]:focus {
+  border: 1px solid rgba(179, 203, 255, 1);
+}
+.searchwrapper {
+  width: 572px;
+  margin: 0 auto;
+}
+.searchwrapper input {
+  padding: 0px;
+  margin: -0.0625em 0px 0px;
+  font: 16px arial,sans-serif;
+  height: 1.88em;
+  padding-right: 22px;
+  padding-top: 1px;
+}
+.mic {
+  float: right;
+  margin-top: -24px;
+  width: 14px;
+  opacity: 0.6;
+  margin-right: 8px;
+}
+.mic:hover {
+  opacity: 1;
+}
+::-webkit-input-placeholder {
+   text-align: right;
+   color: rgba(0,0,0,0.3);
+   font: 16px arial,sans-serif;
+}
+
+:-moz-placeholder {  Firefox 18- 
+   text-align: right;
+   color: rgba(0,0,0,0.3);
+   font: 16px arial,sans-serif;
+}
+
+::-moz-placeholder {   Firefox 19+ 
+   text-align: right;
+   color: rgba(0,0,0,0.3);
+   font: 16px arial,sans-serif;
+}
+
+:-ms-input-placeholder {  
+   text-align: right;
+   color: rgba(0,0,0,0.3);
+   font: 16px arial,sans-serif;
+}
+.fadeout {
+  height: 27px;
+  width: 543px;
+  margin-top: -28px;
+  background: white;
+  position: absolute;
+  margin-left: 1px;
+}
+.buttons {
+  text-align: center;
+}
+.buttons a {
+  text-decoration: none;
+  cursor: default;
+}
+.searchvisible {
+  font: bold 11px/27px Arial,sans-serif!important;
+  border: 1px solid #dcdcdc;
+  border-color: rgba(0,0,0,0.1);
+  color: #444!important;
+  font-size: 11px;
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  margin: 15px 8px;
+  border-radius: 2px;
+  height: 30px;
+}
+.searchvisible:hover {
+  border-color: #c6c6c6;
+  color: #222!important;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  background: #f8f8f8;
+  background: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+.searchhidden {
+  font: bold 11px/27px Arial,sans-serif!important;
+  float: right;
+  background: #1f1f1f;
+  background-image: -webkit-linear-gradient(top, #1f1f1f, #2e2e2e);
+  background-image: -moz-linear-gradient(top, #1f1f1f, #2e2e2e);
+  background-image: -ms-linear-gradient(top, #1f1f1f, #2e2e2e);
+  background-image: -o-linear-gradient(top, #1f1f1f, #2e2e2e);
+  background-image: linear-gradient(to bottom, #1f1f1f, #2e2e2e);
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  border: solid #ebebeb 2px;
+  text-decoration: none;
+  height: 32px;
+  width: 101px;
+  margin-top: -56px;
+  margin-right: -32px;
+  display: none;
+}
+.blacktriangle {
+  width: 12px;
+  float: right;
+  margin-right: 9px;
+  margin-top: -61px;
+  opacity: 0.9;
+  display: none;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 39px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: #666;
+  font-family: arial,sans-serif;
+  font-size: small;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+aside.left {
+  float: left;
+  margin-left: 30px;
+}
+aside.left a {
+  padding-right: 27px;
+}
+aside.right {
+  float: right;
+  margin-right: 30px;
+}
+aside.right a {
+  padding-left: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,8 +2,75 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
-    google
+    <header>
+	    <nav>
+		    <a class="links" href="https://plus.google.com/?gpsrc=ogpy0&tab=wX">+You</a>
+    	    <a class="links" href="https://mail.google.com/mail/?tab=wm">Gmail</a>
+    	    <a class="links" href="https://www.google.com/imghp?hl=en&tab=wi&ei=H3dqVMWMCM6SyASZgoH4Cw&ved=0CAQQqi4oAg">Images</a>
+    	  <a class="squares" href="http://www.google.com/intl/en/options/"></a>
+		  <a href="https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/">
+		    <button>
+		    Sign in
+		    </button>
+		  </a>
+		</nav>
+    </header>
+    <section>
+      <figure>
+      	<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Googlelogo.png/800px-Googlelogo.png">
+      </figure>
+      <div class="searchwrapper">
+      	<input autofocus class="search" type="search" placeholder='Say "Ok Google"'/>
+      	<div class="fadeout">
+      	</div>
+      	<img class="mic" src="data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0dHR/b29ouLi+Tk5AAAAP///yH5BAEAAAcALAAAAAAcACYAAAOueLo8IMYIMJi9DcYtKv6KtnHgB4yoAZSXmEqs9aIxM4/1cm+5ske9w88QHBZ/x13ytpw1X89UlIYZeYRIxWBWWLhSgkVhJFopTjfzAS0hkLyzMDxCCIy62q/kOt4EDiJyCw8RExaBZyMEOW4bai5qII2FDH0ceBcFX5gKdigCAXgFhCh/F55DI6YYmqkSqx8DkzcEVywOAi65FEE2PL0XOMAyv8M6xcZYQMk+yB8JADs">
+      	<div class="buttons">
+      	  <a href="#">
+      	    <button class="searchvisible">
+              Google Search
+            </button>
+          </a>
+          <a href="#">
+            <button class="searchvisible">
+              I'm Feeling Lucky
+            </button>
+          </a>
+        </div>
+        <button class="searchhidden">
+		  Search by voice
+        </button>
+        <img class="blacktriangle" src="http://www.iconsdb.com/icons/preview/black/triangle-m.png">
+      </div>
+    </section>
+    <footer>
+      <aside class="left">
+      	<a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
+      	<a href="https://www.google.com/services/?fg=1">Business</a>
+      	<a href="https://www.google.com/intl/en/about.html?fg=1">About</a>
+      </aside>
+      <aside class="right">
+      	<a href="https://www.google.com/intl/en/policies/?fg=1">Privacy & Terms</a>
+      	<a href="https://www.google.com/preferences?hl=en">Settings</a>
+      </aside>
+    </footer>
+    <script>
+      $(document).ready(function(){
+        $('.fadeout').fadeOut('400');
+        $('.mic').hover(function(){
+          setTimeout(function(){
+          	$('.searchhidden').css('display', 'inline');
+          	$('.blacktriangle').css('display', 'inline');
+          }, 100);
+        }, function(){
+          setTimeout(function(){
+          	$('.searchhidden').css('display', 'none');
+          	$('.blacktriangle').css('display', 'none');
+          }, 100);
+        });
+      });
+    </script>
   </body>
 </html>
