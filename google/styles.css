@@ -53,9 +53,9 @@ header button:hover {
 figure img {
   display: block;
   margin: 0 auto;
-  padding-top: 50px;
-  max-width: 450px;
-  padding-bottom: 15px;
+  padding-top: 110px;
+  max-width: 300px;
+  padding-bottom: 5px;
 }
 .search {
   display: block;
@@ -66,8 +66,14 @@ figure img {
   outline: none;
   border: 1px solid #rgba(0,0,0,0.5);
 }
+.search:hover {
+  border-color: rgba(0,0,0,.3);
+  border-width: 1px;
+  padding-right: 23px; 
+}
 input[type=search]:focus {
-  border: 1px solid rgba(179, 203, 255, 1);
+  border: 1px solid rgba(42, 109, 255, 1);
+  padding-right: 23px;
 }
 .searchwrapper {
   width: 572px;
@@ -96,19 +102,16 @@ input[type=search]:focus {
    color: rgba(0,0,0,0.3);
    font: 16px arial,sans-serif;
 }
-
 :-moz-placeholder {  Firefox 18- 
    text-align: right;
    color: rgba(0,0,0,0.3);
    font: 16px arial,sans-serif;
 }
-
 ::-moz-placeholder {   Firefox 19+ 
    text-align: right;
    color: rgba(0,0,0,0.3);
    font: 16px arial,sans-serif;
 }
-
 :-ms-input-placeholder {  
    text-align: right;
    color: rgba(0,0,0,0.3);
