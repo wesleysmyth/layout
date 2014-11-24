@@ -1,3 +1,228 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  src: url("fonts/ProximaNova-Bold.otf") format("opentype");
+}
 body{
-  /* rules go here */
+  margin: 0;
+  padding: 0 1em;
+}
+header {
+  display: block;
+  position: relative;
+  height: 7em;
+  top: 1.2em;
+}
+.logo{
+  background: url('img/basecamp-a3c9e389acdeba3ac2bd084d0ce0462b.png') 0 0 no-repeat;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-size: 160px 37px;
+  left: .75em;
+  padding-top: 37px;
+  width: 160px;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+header aside {
+  position: relative;
+  float: right;
+  font-family: "Proxima Nova", "Lucida Grande", Helvetica, sans-serif;
+  font-size: 16px;
+  right: .5em;
+  top: .35em;
+  line-height: 1.25em;
+}
+a {
+  color: #0066cc;
+}
+a:hover {
+  color: #0078f1;
+}
+header aside button {
+  font-family: "Proxima Nova", "Lucida Grande", Helvetica, sans-serif;
+  background-color: #06C;
+  border-color: #105296;
+  color: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #105296;
+  border-bottom-width: 3px;
+  font-size: 14px;
+  padding: 8px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -1px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}
+header aside button:hover {
+  background-color: #1a7de6;
+  text-decoration: none;
+}
+header aside button:active {
+  background-color: #036;
+}
+.asideLinks {
+  margin-right: 0.5em;
+}
+.plane {
+  width: 560px;
+  display: block;
+  margin: 18px auto;
+}
+figure {
+  margin: 0;
+}
+section {
+  max-width: 968px;
+  margin: 0 auto;
+  font-family: "Proxima Nova", "Lucida Grande", Helvetica, sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+  letter-spacing: -1px;
+}
+section img {
+  max-width: 968px;
+}
+section button {
+  font-family: "Proxima Nova", "Lucida Grande", Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #06C;
+  border-color: #105296;
+  color: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #105296;
+  border-bottom-width: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 50px auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1em;
+  padding: .75em 1em;
+}
+section button:hover {
+  background-color: #1a7de6;
+  text-decoration: none;
+}
+section button:active {
+  background-color: #036;
+}
+section h1 {
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  max-width: 900px; 
+  font-size: 37px;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 1em;
+  padding-top: 8px;
+}
+section article {
+  max-width: 680px;
+  text-align: left;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+section article h2 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1em;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1em;
+  padding-bottom: 6px;
+}
+section article p , section article ul {
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Proxima Nova", "Lucida Grande", Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.25em;
+  padding-bottom: 31px;
+}
+.middle-images:nth-child(1) {
+  padding-top: 34px;
+}
+.middle-images {
+  margin-bottom: 11px; 
+}
+.bottom img.family {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.bottom ul {
+  margin-top: -14px;
+  padding-left: 19px;
+  font-size: 21px;
+}
+.bottom li {
+  padding-bottom: 21px;
+}
+.bottom article h2:nth-child(5) {
+  margin-top: -20px;
+}
+.bottom button {
+  margin-top: 17px;
+}
+.bottom img.flag {
+  width: 100px;
+}
+footer section {
+  line-height: 0.6em;
+}
+footer h5 {
+  margin: 0;
+  font-size: 22px;
+}
+footer a {
+  font-size: 17px;
+}
+footer h5.everything {
+  margin-top: 5px;
+}
+footer h5.inspiration {
+  margin-top: 50px;
+}
+.copy {
+  font-size: 16px;
+  margin-top: 50px;
+  letter-spacing: 0.01em;
+}
+.fine {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  padding-top: 10px;
+}
+.fine a {
+  font-size: 16px;
+}
+.footerlogo{
+  background: url('img/basecamp-a3c9e389acdeba3ac2bd084d0ce0462b.png') 0 0 no-repeat;
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background-size: 160px 37px;
+  padding-top: 37px;
+  width: 160px;
+}
+.footerlogo:hover {
+  opacity: 0.8;
+}
+.day {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  margin-bottom: 65px;
 }
